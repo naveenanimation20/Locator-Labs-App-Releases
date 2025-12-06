@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Platform-macOS%20%7C%20Windows-blue?style=for-the-badge" alt="Platform">
+  <img src="https://img.shields.io/badge/Platform-macOS%20%7C%20Windows%20%7C%20Linux-blue?style=for-the-badge" alt="Platform">
   <img src="https://img.shields.io/badge/Playwright-45ba4b?style=for-the-badge&logo=playwright&logoColor=white" alt="Playwright">
   <img src="https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=selenium&logoColor=white" alt="Selenium">
 </p>
@@ -64,10 +64,9 @@ Generate production-ready Page Object classes for:
 
 | Platform | Download |
 |----------|----------|
-| 🍎 **macOS** (Universal - Intel & Apple Silicon) | [LocatorLabs-1.0.0-universal.dmg](https://github.com/naveenanimation20/Locator-Labs-App-Releases/releases/download/v1.0.0/LocatorLabs-1.0.0-universal.dmg) |
-| 🪟 **Windows** | [LocatorLabs Setup 1.0.0.exe](https://github.com/naveenanimation20/Locator-Labs-App-Releases/releases/download/v1.0.0/LocatorLabs.Setup.1.0.0.exe) |
-
-> 🐧 Linux build coming soon!
+| 🍎 **macOS** (Universal - Intel & Apple Silicon) | [LocatorLabs-1.0.0-universal.dmg](https://github.com/naveenanimation20/Locator-Labs-App-Releases/releases/download/1.0/LocatorLabs-1.0.0-universal.dmg) |
+| 🪟 **Windows** | [LocatorLabs Setup 1.0.0.exe](https://github.com/naveenanimation20/Locator-Labs-App-Releases/releases/download/1.0/LocatorLabs.Setup.1.0.0.exe) |
+| 🐧 **Linux** | [LocatorLabs-1.0.0.AppImage](https://github.com/naveenanimation20/Locator-Labs-App-Releases/releases/download/1.0/LocatorLabs-1.0.0.AppImage) |
 
 👉 **[View all releases](https://github.com/naveenanimation20/Locator-Labs-App-Releases/releases)**
 
@@ -82,6 +81,7 @@ Generate production-ready Page Object classes for:
 1. **Download** the installer for your platform from [Releases](https://github.com/naveenanimation20/Locator-Labs-App-Releases/releases)
 2. **macOS**: Open the `.dmg` and drag Locator Labs to Applications
 3. **Windows**: Run the `.exe` installer
+4. **Linux**: Make the `.AppImage` executable: `chmod +x LocatorLabs-1.0.0.AppImage` and run it
 
 ### Quick Start Guide
 
@@ -161,6 +161,7 @@ driver.findElement(By.cssSelector("[data-testid='login']"))
 |----------|-----------------|
 | **macOS** | 10.13 High Sierra or later |
 | **Windows** | Windows 10 or later |
+| **Linux** | Ubuntu 18.04+ or equivalent |
 
 ---
 
