@@ -1,6 +1,8 @@
 # ⚡ Locator Labs Desktop
 
-<a align="center" href="https://www.locator-labs.com">LocatorLabs</a> •
+<p align="center">
+<a align="center" href="https://www.locator-labs.com">LocatorLabs</a>
+</p>
 
 <p align="center">
   <b>The Ultimate Element Locator Generator for Test Automation Engineers</b>
