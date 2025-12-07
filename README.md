@@ -1,8 +1,6 @@
 # ⚡ Locator Labs Desktop
 
-<p align="center">
-  <img src="assets/icon.png" alt="Locator Labs" width="128" height="128">
-</p>
+<a align="center" href="https://www.locator-labs.com">LocatorLabs</a> •
 
 <p align="center">
   <b>The Ultimate Element Locator Generator for Test Automation Engineers</b>
