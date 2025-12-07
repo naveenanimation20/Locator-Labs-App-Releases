@@ -215,7 +215,7 @@ Yes! The built-in browser maintains your session, so you can log in and inspect 
 ## 📄 License
 
 Proprietary Software - All Rights Reserved
-© 2024 Naveen Automation Labs
+© 2025 Naveen Automation Labs
 
 ---
 
