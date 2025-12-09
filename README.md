@@ -180,28 +180,7 @@ cy.xpath('//button[@id="login"]')
 
 ---
 
-## 🆕 What's New
 
-### v1.1.0
-- ✅ **Cypress Framework Support** - Full locator generation with `cy.get()`, `cy.contains()`, `cy.xpath()`
-- ✅ **Cypress Actions** - Autocomplete for `.click()`, `.type()`, `.should()`, `.invoke()`, `.trigger()`
-- ✅ **Interactive Tour Guide** - Onboarding experience for new users
-- ✅ **Playwright frameLocator()** - Automatic iframe handling with nested frame support
-- ✅ **Shadow DOM for Cypress** - `cy.get().shadow()` chain support
-- ✅ **Improved Test Locator** - Better frame navigation and error messages
-- ✅ **Bug Fixes** - XPath quote handling, accessible name matching, and more
-
-### v1.0.0
-- ✅ Initial Release
-- ✅ Playwright & Selenium support
-- ✅ Page Object Model generator (8 frameworks)
-- ✅ Shadow DOM & iFrame handling
-- ✅ Multi-tab browsing
-- ✅ Dark/Light theme
-- ✅ URL history with suggestions
-- ✅ Test locator with element navigation
-
----
 
 ## ❓ FAQ
 
