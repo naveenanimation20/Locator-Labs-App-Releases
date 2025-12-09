@@ -63,13 +63,15 @@ Generate production-ready Page Object classes for:
 
 ## 📥 Download
 
-### Latest Release: v1.1.0
+### Latest Release: v1.1.5
 
 | Platform | Download |
 |----------|----------|
-| 🍎 **macOS** (Universal - Intel & Apple Silicon) | [LocatorLabs-1.1.0-universal.dmg](https://github.com/naveenanimation20/Locator-Labs-App-Releases/releases/download/1.1.0/LocatorLabs-1.1.0-universal.dmg) |
-| 🪟 **Windows** | [LocatorLabs Setup 1.1.0.exe](https://github.com/naveenanimation20/Locator-Labs-App-Releases/releases/download/1.1.0/LocatorLabs.Setup.1.1.0.exe) |
-| 🐧 **Linux** | [LocatorLabs-1.1.0.AppImage](https://github.com/naveenanimation20/Locator-Labs-App-Releases/releases/download/1.1.0/LocatorLabs-1.1.0.AppImage) |
+| 🍎 **macOS** (Universal - Intel & Apple Silicon) | [LocatorLabs-1.1.5-universal.dmg](https://github.com/naveenanimation20/Locator-Labs-App-Releases/releases/download/1.1.5/LocatorLabs-1.1.5-universal.dmg) |
+| 🪟 **Windows** | [LocatorLabs Setup 1.1.5.exe](https://github.com/naveenanimation20/Locator-Labs-App-Releases/releases/download/1.1.5/LocatorLabs.Setup.1.1.5.exe) |
+| 🐧 **Linux** | [LocatorLabs-1.1.5.AppImage](https://github.com/naveenanimation20/Locator-Labs-App-Releases/releases/download/1.1.5/LocatorLabs-1.1.5.AppImage) |
+
+---
 
 👉 **[View all releases](https://github.com/naveenanimation20/Locator-Labs-App-Releases/releases)**
 
