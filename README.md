@@ -45,10 +45,23 @@
 | **Multi-Tab Support** | Work with multiple pages simultaneously |
 | **Shadow DOM Support** | Works with web components |
 | **iFrame Support** | Handles nested frames automatically with `frameLocator()` |
-| **SVG Element Support** | Special handling for SVG elements |
+| **SVG Element Support** | Special handling for SVG elements with `local-name()` XPath |
 | **Test Locator** | Validate locators before using them |
 | **Action Autocomplete** | `.click()`, `.fill()`, `.type()`, `.should()` and more |
 | **Dark/Light Theme** | Easy on the eyes |
+
+### 🎯 PO Mode (Page Object Mode)
+
+**One-click element capture for rapid Page Object creation!**
+
+| Feature | Description |
+|---------|-------------|
+| **Quick Toggle** | Click the **PO** button to enable/disable |
+| **Click to Add** | Simply click elements to add them to your cart |
+| **Status Bar** | Shows "PO Mode Active" above URL bar |
+| **Duplicate Prevention** | Won't add the same element twice |
+| **Visual Feedback** | Toast notifications confirm additions |
+| **ESC to Exit** | Press ESC key to quickly disable PO Mode |
 
 ### 📦 Page Object Model Generator
 
@@ -63,19 +76,37 @@ Generate production-ready Page Object classes for:
 
 ## 📥 Download
 
-### Latest Release: v1.1.5
+### Latest Release: v1.1.0
 
 | Platform | Download |
 |----------|----------|
-| 🍎 **macOS** (Universal - Intel & Apple Silicon) | [LocatorLabs-1.1.5-universal.dmg](https://github.com/naveenanimation20/Locator-Labs-App-Releases/releases/download/1.1.5/LocatorLabs-1.1.5-universal.dmg) |
-| 🪟 **Windows** | [LocatorLabs Setup 1.1.5.exe](https://github.com/naveenanimation20/Locator-Labs-App-Releases/releases/download/1.1.5/LocatorLabs.Setup.1.1.5.exe) |
-| 🐧 **Linux** | [LocatorLabs-1.1.5.AppImage](https://github.com/naveenanimation20/Locator-Labs-App-Releases/releases/download/1.1.5/LocatorLabs-1.1.5.AppImage) |
-
----
+| 🍎 **macOS** (Universal - Intel & Apple Silicon) | [LocatorLabs-1.1.0-universal.dmg](https://github.com/naveenanimation20/Locator-Labs-App-Releases/releases/download/1.1.0/LocatorLabs-1.1.0-universal.dmg) |
+| 🪟 **Windows** | [LocatorLabs Setup 1.1.0.exe](https://github.com/naveenanimation20/Locator-Labs-App-Releases/releases/download/1.1.0/LocatorLabs.Setup.1.1.0.exe) |
+| 🐧 **Linux** | [LocatorLabs-1.1.0.AppImage](https://github.com/naveenanimation20/Locator-Labs-App-Releases/releases/download/1.1.0/LocatorLabs-1.1.0.AppImage) |
 
 👉 **[View all releases](https://github.com/naveenanimation20/Locator-Labs-App-Releases/releases)**
 
 > 💡 **Note**: macOS users may need to right-click and select "Open" for the first launch due to Gatekeeper.
+
+### Alternative: Install via npm
+
+For developers who prefer npm or work in environments where .exe files are restricted:
+
+```bash
+# Install globally
+npm install -g locatorlabs
+locatorlabs
+
+# Or run directly without installing (one-time use)
+npx locatorlabs
+
+# With dev tools enabled
+npx locatorlabs --dev
+```
+
+**Requirements for npm installation:**
+- Node.js 16 or later
+- npm 7 or later
 
 ---
 
@@ -132,6 +163,23 @@ Generate production-ready Page Object classes for:
 5. Click "Download File" or "Copy to Clipboard"
 ```
 
+### Using PO Mode (Faster Method!)
+
+```
+1. Click the "PO" button next to the URL bar (turns green when active)
+2. Status bar appears: "PO Mode Active - Click on elements to add"
+3. Click any element on the page - it's automatically added to cart
+4. Repeat for all elements you need
+5. Press ESC or click "PO" again to exit
+6. Click 📦 cart icon to generate your Page Object class
+```
+
+**Tips:**
+- Duplicate elements are automatically prevented
+- Green toast = element added successfully
+- Red toast = element already in cart
+- Works with iframes and Shadow DOM elements
+
 ---
 
 ## 🎯 Locator Quality Guide
@@ -180,7 +228,37 @@ cy.xpath('//button[@id="login"]')
 
 ---
 
+## 🆕 What's New
 
+### v1.1.8
+- ✅ **PO Mode (Page Object Mode)** - Click the PO button, then click elements to instantly add them to your Page Object cart
+- ✅ **PO Mode Status Bar** - Visual indicator above URL bar showing when PO Mode is active
+- ✅ **Duplicate Prevention** - Same element cannot be added twice to the cart
+- ✅ **SVG XPath Fix** - Proper `local-name()` syntax for SVG elements
+- ✅ **Improved Variable Naming** - Better camelCase/snake_case naming based on element IDs
+- ✅ **iFrame Detection Fix** - Correctly detects elements inside iframes for Selenium/Cypress
+- ✅ **Tour Guide Update** - Added PO Mode to the interactive tour
+
+### v1.1.0
+- ✅ **Cypress Framework Support** - Full locator generation with `cy.get()`, `cy.contains()`, `cy.xpath()`
+- ✅ **Cypress Actions** - Autocomplete for `.click()`, `.type()`, `.should()`, `.invoke()`, `.trigger()`
+- ✅ **Interactive Tour Guide** - Onboarding experience for new users
+- ✅ **Playwright frameLocator()** - Automatic iframe handling with nested frame support
+- ✅ **Shadow DOM for Cypress** - `cy.get().shadow()` chain support
+- ✅ **Improved Test Locator** - Better frame navigation and error messages
+- ✅ **Bug Fixes** - XPath quote handling, accessible name matching, and more
+
+### v1.0.0
+- ✅ Initial Release
+- ✅ Playwright & Selenium support
+- ✅ Page Object Model generator (8 frameworks)
+- ✅ Shadow DOM & iFrame handling
+- ✅ Multi-tab browsing
+- ✅ Dark/Light theme
+- ✅ URL history with suggestions
+- ✅ Test locator with element navigation
+
+---
 
 ## ❓ FAQ
 
@@ -247,12 +325,39 @@ The Test Locator lets you validate any locator before using it in your tests:
 <details>
 <summary><b>How do I generate a Page Object Model class?</b></summary>
 
+**Method 1: Traditional (using ➕ button)**
 1. While inspecting elements, click ➕ on locators you want to include
 2. Click the 📦 cart icon in the header
 3. Enter a page name (e.g., "LoginPage")
 4. Select your framework (Playwright, Selenium, Cypress, WebdriverIO, Robot Framework)
 5. Choose your language
 6. Click "Download File" or "Copy to Clipboard"
+
+**Method 2: PO Mode (Faster!)**
+1. Click the **PO** button next to the URL bar
+2. Simply click on elements - they're automatically added
+3. Press ESC when done
+4. Click 📦 cart to generate your class
+</details>
+
+<details>
+<summary><b>What is PO Mode and how do I use it?</b></summary>
+
+PO Mode (Page Object Mode) is a faster way to build Page Objects:
+
+1. Click the **PO** button next to the URL bar (it turns green)
+2. A status bar appears: "PO Mode Active - Click on elements to add"
+3. Click any element on the page - it's instantly added to your cart
+4. A green toast confirms: "Added to Page Object"
+5. If you try to add a duplicate, a red toast warns: "Element already in cart!"
+6. Press **ESC** or click **PO** again to exit
+7. Click the 📦 cart icon to generate your Page Object class
+
+**Benefits:**
+- Much faster than clicking ➕ for each locator
+- Automatic duplicate prevention
+- Works with iframes and Shadow DOM
+- Visual feedback for every action
 </details>
 
 <details>
@@ -344,6 +449,27 @@ Yes! LocatorLabs Desktop is designed for enterprise use:
 - Runs locally on your machine (no data sent to external servers)
 - Works with internal/intranet applications
 - Supports authentication and maintains sessions
+- **npm installation available** for environments where .exe files are blocked but npm is allowed
+</details>
+
+<details>
+<summary><b>Can I install via npm instead of downloading the .exe?</b></summary>
+
+Yes! If you have Node.js installed, you can use npm:
+
+```bash
+# One-time run (no install)
+npx locatorlabs
+
+# Or install globally
+npm install -g locatorlabs
+locatorlabs
+```
+
+This is useful for:
+- Developers who prefer command-line installation
+- Environments where .exe downloads are blocked but npm is allowed
+- Keeping the app updated easily via npm
 </details>
 
 ---
